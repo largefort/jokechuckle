@@ -1,0 +1,48 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#typewriter {
+    position: relative;
+    width: 60%;
+}
+
+#typed-output {
+    border: 2px solid #000;
+    padding: 20px;
+    font-size: 1.5em;
+    background: #fff;
+    height: 200px;
+    overflow-y: auto;
+}
+
+#input-box {
+    margin-top: 20px;
+    width: 60%;
+    padding: 10px;
+    font-size: 1.2em;
+    border: 2px solid #000;
+}
+
+.joke-popup {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: #ffeb3b;
+    padding: 10px;
+    border: 1px solid #000;
+    font-size: 1em;
+    animation: fadeInOut 3s forwards;
+}
+
+@keyframes fadeInOut {
+    0% { opacity: 0; }
+    10% { opacity: 1; }
+    90% { opacity: 1; }
+    100% { opacity: 0; }
+}
